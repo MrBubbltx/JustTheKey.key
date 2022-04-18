@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="basicimages/JustTheKey_logo_svg.svg">
+    <link rel="stylesheet" href="TipthekeyUI.css">
+    <title>JustTheKey</title>
+</head>
+<body>
+    <div class="progressbar"></div>
+    <div class="navbar-web">
+        <div class="svglogo" id="logoheader"></div>
+        <div class="misslinks">
+            <a href="pages/CreateKeys.html">Create Keys</a>
+            <a data-where="">About</a>
+        </div>
+    </div>
+    <section id="firstpartaboutintro">
+        <div class="introtext">You can open and hide keys.<br>Totally <span>undetectable!</span></div>
+        <div id="trybutton" onclick="scrollviewinput()">Wanna Give a Try?</div>
+    </section>
+    <section id="openkeys">
+        <div><p class="textnowwee">You Can Open Your Keys Here!</p></div>
+        <div class="inputsarea">
+            <input type="text" name="inputkeytext" id="idtextkeyinput">
+            <div class="buttonconvert" onclick="findthekey()">Done!</div>
+        </div>
+        <div class="linksopen">
+            <p class="linkedtextnow">Your Key Leads to a website. Would you like to follow?</p>
+            <a class="followbtn" id="follzse">Yes, Sure!</a>
+        </div>
+    </section>
+</body>
+<script src="findthekey.js"></script>
+</html>
