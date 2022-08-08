@@ -5,41 +5,15 @@ let progresstrigger = document.querySelector('.progressbar');
 let openkeys = document.querySelector('#openkeys');
 
 function findthekey(){
-    let ricklink = "https://www.youtube.com/watch?v=fcZXfoB2f70";
-    let bingchillinlink = "https://youtu.be/6AY-NcO7DOA";
-    let dreamsusremix = "https://www.youtube.com/watch?v=NkFrnFooMgk";
+    let newvalue = atob(userinput.value);
 
-    if(userinput.value == "D44gIjerKKwQ"){
-        progresstrigger.classList.add("load");
+    progresstrigger.classList.add("load");
         setTimeout(function(){
             typenlinked.style.display = "flex";
             userinput.value = "";
-            followlink.setAttribute("href", ricklink);
+            followlink.setAttribute("href", `https://www.youtube.com/watch?v=${newvalue}`);
             progresstrigger.classList.remove("load");
-        }, 1000);
-
-    }
-    else if(userinput.value == "BiChln_9402Dam"){
-        progresstrigger.classList.add("load");
-        setTimeout(function(){
-            typenlinked.style.display = "flex";
-            userinput.value = "";
-            followlink.setAttribute("href", bingchillinlink);
-            progresstrigger.classList.remove("load");
-        }, 1000);
-    }
-    else if(userinput.value == "DZA1pvKT"){
-        progresstrigger.classList.add("load");
-        setTimeout(function(){
-            typenlinked.style.display = "flex";
-            userinput.value = "";
-            followlink.setAttribute("href", dreamsusremix);
-            progresstrigger.classList.remove("load");
-        }, 1000);
-    }
-    else{
-        alert("Hmmmm... Seems like your key is Invalid.");
-    }
+    }, 1000);
 }
 
 function scrollviewinput(){
